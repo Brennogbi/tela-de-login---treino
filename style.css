@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: url(img/download.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Define a altura como 100% da tela */
+    margin: 0; /* Remove margens padrão */
+
+    
+    
+}
+.body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.cotainer{
+    background: rgba(255, 255, 255, 0.534);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+    border: 3px solid black;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button{
+
+    width: 150px;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,128,0,0.804359243697479) 52%);
+    color: rgba(0, 0, 0, 0.459);
+    border: none;
+}
+
+.mensagem{
+
+    margin-top: 10px;
+    color: red;
+}
+
+
+h1{
+
+    font-size: 40px;
+ color: rgb(0, 0, 0);
+ font-weight: 600;
+ border-color: black;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Ocupa toda a largura */
+    height: 100vh; /* Ocupa toda a altura */
+    object-fit: cover; /* Garante que o vídeo cubra a tela sem distorção */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
